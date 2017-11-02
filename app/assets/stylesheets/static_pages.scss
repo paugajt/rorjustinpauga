@@ -1,3 +1,87 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+
+  background: linear-gradient(#303030, white);
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 40px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color:black;
+}
+.img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+.heading {
+  text-align: center;
+}
+
+#homename {
+  font-size: 400%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.projects-img {
+	height: 300px;
+	width: 500px;
+}
+
+#school_info {
+	text-align: center;
+}
+
+.col {
+	column-count: 3;
+	column-gap: 20px;
+	list-style-position: inside;
+	display: inline-block;
+}
+
+.col li {
+	
+}
+
+#skills {
+	text-indent: 75px;
+}
+
+.resume-section {
+	text-indent: 25px;
+}
+
+.resume-info {
+	margin: 0;
+	text-indent: 175px;
+	font-weight: bold;
+}
+
+.resume-text-body {
+	margin-left: 175px;
+	width: 80%;
+
+}
+
+.info hr {
+	margin-left: 175px;
+}
