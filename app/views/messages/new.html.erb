@@ -1,0 +1,11 @@
+<h1 class="heading">Contact me</h1>
+
+<%= form_for @message, url: create_message_url do |f| %>
+  <%= notice %>
+  <%= @message.errors.full_messages.join(', ') %>
+
+  <p class="contact">Name: <%= f.text_field :name, placeholder: 'name' %></p>
+  <p class="contact">Email:<%= f.email_field :email, placeholder: 'email' %></p>
+  <p class="contact">Message:<%= f.text_area :body, placeholder: 'body' %></p>
+  <p class="contact"><%= f.submit 'Send' %></p>
+<% end %>
