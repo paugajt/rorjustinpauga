@@ -8,30 +8,30 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 <body class="container">
-
-
-    
-    <header>
-      
+  <nav>
+    <div class="container">
       <div class="navbar" id="myNavbar">
-      <button class="headerbtn"><a href="http://localhost:3000">Home</a></button>
-       <div class="dropdown">
-        <button class="headerbtn">Projects
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href='http://localhost:3000/projects/springboot'>Spring Boot</a>
-          <a href='http://localhost:3000/projects/rubyonrails'>Ruby on Rails</a>
-          <a href="http://localhost:3000/projects/visualbasic">Visual Basic</a>
-        </div>
-       </div>
-      <button class="headerbtn"><a href="http://localhost:3000/static_pages/resume">Resume</a></button>
-      <button class="headerbtn" style="float: right"><a href="contact.html">Contact</a></button>
-    </div>
+       <%= image_tag("/Logo.PNG", class: "logo") %> 
+       <button class="headerbtn"><a href="http://localhost:3000">Home</a></button>
         
+        <div class="dropdown">
+          <button class="headerbtn">Projects</button>
+            <div class="dropdown-content">
+            <a href='http://localhost:3000/projects/springboot'>Spring Boot</a>
+            <a href='http://localhost:3000/projects/rubyonrails'>Ruby on Rails</a>
+            <a href="http://localhost:3000/projects/visualbasic">Visual Basic</a>
+            </div>
         </div>
-      </nav>
-    </header>
+       
+      <button class="headerbtn"><a href="http://localhost:3000/static_pages/resume">Resume</a></button>
+        
+     
+      <button class="headerbtn" style="float: right"><a href="contact.html">Contact</a></button>
+      
+      </div>
+      </div>
+  </nav>
+    
     <%= yield %>
 </body>
 <footer>

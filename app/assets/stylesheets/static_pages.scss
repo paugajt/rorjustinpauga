@@ -16,9 +16,13 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
-  height: 40px;
+  height: 20px;
 }
 
+.logo {
+  height: 80px;
+  float:left;
+}
 .dropdown {
   float: left;
   overflow: hidden;
@@ -34,6 +38,8 @@ body {
   padding: 14px 16px;
   background-color: inherit;
 }
+
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #ddd;
@@ -97,7 +103,7 @@ body {
 
 .projects-img {
 	height: 300px;
-	width: 500px;
+	width: 750px;
 }
 
 #school_info {
