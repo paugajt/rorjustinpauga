@@ -8,31 +8,45 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 <body class="container">
-
-
+  <nav>
+    <div class="container">
+      <div class="navbar" id="myNavbar">
+       <%= image_tag("/Logo.PNG", class: "logo") %> 
+       <button class="headerbtn"><a href="http://localhost:3000">Home</a></button>
+        
+        <div class="dropdown">
+          <button class="headerbtn">Projects</button>
+            <div class="dropdown-content">
+            <a href='http://localhost:3000/projects/springboot'>Spring Boot</a>
+            <a href='http://localhost:3000/projects/rubyonrails'>Ruby on Rails</a>
+            <a href="http://localhost:3000/projects/visualbasic">Visual Basic</a>
+            </div>
+        </div>
+       
+      <button class="headerbtn"><a href="http://localhost:3000/static_pages/resume">Resume</a></button>
+        
+     
+      <button class="headerbtn" style="float: right"><a href="contact.html">Contact</a></button>
+      
+      </div>
+      </div>
+  </nav>
     
-    <header class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-brand" href="#">Justin Pauga</a>
-        </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling
-          -->
-
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="http://localhost:3000">Home</a></li>
-            
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Log out', destroy_user_session_path, method: :delete%></li>
-            </ul>
-
-
-        </div>
-      </nav>
-    </header>
     <%= yield %>
 </body>
+<footer>
+<hr>
+    <h2 style="text-align: center">Feel free to contact me directly!</h2>
 
+    <!-- Social media and contact links. -->
+    <div class="socialbtns" style="text-align: center">
+        <p><a href="https://github.com/paugajt" target="_blank" class="fa fa-lg fa-github"></a>
+        <a href="https://www.linkedin.com/in/justin-pauga-51152698/" target="_blank" class="fa fa-lg fa-linkedin"></a>
+        <a href="https://www.facebook.com/justin.pauga" target="_blank" class="fa fa-lg fa-facebook"></a>
+      </p>
+      <a href="mailto:paugajt@gmail.com" target="_blank">paugajt@gmail.com</a>
+    </div>
+
+    <p style="text-align: center">Copyright 2017 by Justin Pauga</p>
+</footer>
 </html>
