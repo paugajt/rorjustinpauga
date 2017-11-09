@@ -1,0 +1,160 @@
+body {
+
+  background: linear-gradient(#303030, white);
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 20px;
+}
+
+.logo {
+  height: 80px;
+  float:left;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  display: inline;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color:black;
+}
+
+.headerbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  float: left;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+.heading {
+  text-align: center;
+}
+
+#homename {
+  font-size: 400%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.projects-img {
+	height: 300px;
+	width: 750px;
+}
+
+#school_info {
+	text-align: center;
+}
+
+.col {
+	column-count: 3;
+	column-gap: 20px;
+	list-style-position: inside;
+	display: inline-block;
+}
+
+.exp-col {
+  column-count: 2;
+  column-gap: 20px;
+  list-style-position: inside;
+  display: inline-block;
+}
+
+#exp-add {
+  text-indent: 150px;
+}
+
+#skills {
+	text-indent: 75px;
+}
+
+.resume-section {
+	text-indent: 25px;
+}
+
+.resume-info {
+	margin: 0;
+	text-indent: 175px;
+	font-weight: bold;
+}
+
+.resume-text-body {
+	margin-left: 175px;
+	width: 80%;
+
+}
+
+.info hr {
+	margin-left: 175px;
+}
+
+.job-date {
+  float: right;
+}
+
+
+
