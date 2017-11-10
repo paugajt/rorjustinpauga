@@ -12,17 +12,17 @@
     
       <div class="navbar">
        <%= image_tag("/Logo.PNG", class: "logo") %> 
-       <a href="http://localhost:3000">Home</a>
+       <%= link_to "Home", home_path %>
        <div class="dropdown">
-          <a href="http://localhost:3000/static_pages/projects">Projects</a>
+          <%= link_to "Projects", projects_path %>
           <div class="dropdown-content">
-            <a href='http://localhost:3000/projects/springboot'>Spring Boot</a>
-            <a href='http://localhost:3000/projects/rubyonrails'>Ruby on Rails</a>
-            <a href="http://localhost:3000/projects/visualbasic">Visual Basic</a>
+            <%= link_to "Spring Boot", springboot_path %>
+            <%= link_to "Ruby on Rails", rubyonrails_path %>
+            <%= link_to "Visual Basic", visualbasic_path %>
           </div>
        </div>     
-      <a href="http://localhost:3000/static_pages/resume">Resume</a>
-      <a href="http://localhost:3000/static_pages/coming_soon" style="float: right">Contact</a>
+      <%= link_to "Resume", resume_path %>
+      <%= link_to "Contact", coming_soon_path, style: "float: right" %>
       </div>
     
   </nav>

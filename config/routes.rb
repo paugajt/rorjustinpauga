@@ -1,24 +1,25 @@
 Rails.application.routes.draw do
-  get 'projects/springboot'
 
-  get 'projects/rubyonrails'
+	get "home" => "static_pages#home", as: "home"
 
-  get 'projects/visualbasic'
+	get "resume" => "static_pages#resume", as: "resume"
 
-  get 'static_pages/home'
+	get "coming_soon" => "static_pages#coming_soon", as: "coming_soon"
 
-  get 'static_pages/projects'
+	get "springboot" => "projects#springboot", as: "springboot"
 
-  get 'static_pages/resume'
+	get "rubyonrails" => "projects#rubyonrails", as: "rubyonrails"
 
-  get 'static_pages/coming_soon'
+	get "visualbasic" => "projects#visualbasic", as: "visualbasic"
 
-  root 'static_pages#home'
+	get "projects" => "static_pages#projects", as: "projects"
 
-  get 'download_resume', to: 'downloads#download_resume'
+	root 'static_pages#home'
 
-  get 'contact-me', to: 'messages#new', as: 'new_message'
-  post 'contact-me', to: 'messages#create', as: 'create_message'
+	get 'download_resume', to: 'downloads#download_resume'
+
+	get 'contact-me', to: 'messages#new', as: 'new_message'
+	post 'contact-me', to: 'messages#create', as: 'create_message'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
