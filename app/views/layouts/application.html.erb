@@ -9,27 +9,22 @@
   </head>
 <body class="container">
   <nav>
-    <div class="container">
-      <div class="navbar" id="myNavbar">
+    
+      <div class="navbar">
        <%= image_tag("/Logo.PNG", class: "logo") %> 
        <a href="http://localhost:3000">Home</a>
-        
-        <div class="dropdown">
-            <a href="http://localhost:3000/static_pages/projects">Projects</a>
-              <div class="dropdown-content">
-              <a href='http://localhost:3000/projects/springboot'>Spring Boot</a>
-              <a href='http://localhost:3000/projects/rubyonrails'>Ruby on Rails</a>
-              <a href="http://localhost:3000/projects/visualbasic">Visual Basic</a>
-              </div>
-        </div>
-       
+       <div class="dropdown">
+          <a href="http://localhost:3000/static_pages/projects">Projects</a>
+          <div class="dropdown-content">
+            <a href='http://localhost:3000/projects/springboot'>Spring Boot</a>
+            <a href='http://localhost:3000/projects/rubyonrails'>Ruby on Rails</a>
+            <a href="http://localhost:3000/projects/visualbasic">Visual Basic</a>
+          </div>
+       </div>     
       <a href="http://localhost:3000/static_pages/resume">Resume</a>
-        
-     
       <a href="http://localhost:3000/static_pages/coming_soon" style="float: right">Contact</a>
-      
       </div>
-      </div>
+    
   </nav>
     
     <%= yield %>
