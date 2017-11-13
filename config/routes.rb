@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
 	get "projects" => "static_pages#projects", as: "projects"
 
+	get "aboutme" => "static_pages#aboutme", as: "aboutme"
+
 	root 'static_pages#home'
 
 	get 'download_resume', to: 'downloads#download_resume'
