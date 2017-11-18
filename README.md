@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application was built using Ruby on Rails 5. It contains mostly static pages
+that makes a personal portfolio website for me. 
 
-Things you may want to cover:
+The idea is to have a place where potential employers can learn about me and see some of the 
+work that I've done while pursuing my Computer science degree. 
 
-* Ruby version
+This application is hosted by heroku and uses my own domain name.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It can be found at www.justinpauga.com
